@@ -6,7 +6,7 @@ import { NoResult } from "./NoResult";
 
 
 
-export const SearchResult = ({  searchQuery, selectedCategory,setSearchQuery}) => {
+export const SearchResults = ({  searchQuery, selectedCategory,setSearchQuery}) => {
   const query = searchQuery.trim().toLowerCase()
 
   const filteredResults = SearchData.filter((result)=>{

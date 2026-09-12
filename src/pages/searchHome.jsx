@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { CategoryFilter } from "../components/CategoryFilter";
 import { Navbar } from "../components/Navbar";
-import { SearchSection } from "../components/searchSection";
+import { SearchSection } from "../components/SearchSection";
 import { useDebounce } from "../hooks/useDebounce";
-import { SearchResult } from "../components/SearchResult";
+import { SearchResults } from "../components/SearchResult";
 
 export const SearchHome = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -29,7 +29,7 @@ export const SearchHome = () => {
         setSearchQuery={setSearchQuery}
       />
 
-      <SearchResult
+      <SearchResults
         searchQuery={debouncedSearch}
         setSearchQuery={setSearchQuery}
         selectedCategory={selectedCategory}
