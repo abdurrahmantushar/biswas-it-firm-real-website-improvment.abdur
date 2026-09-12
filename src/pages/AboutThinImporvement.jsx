@@ -9,7 +9,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import { HeadingAnimation } from "../animations/HeadingAnimation";
-import { CardAnimation } from "../animations/CardAnimation";
+import { CardAnimation } from "../animations/cardAnimation";
 
 const improvements = [
   {
